@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class apples {
+	public static void main(String []args) {
+		Scanner bucky = new Scanner(System.in);
+		double fnum, snum, answer;
+		String operation;
+		System.out.println("Enter first num: ");
+		fnum = bucky.nextDouble();
+		System.out.println("Enter second num: ");
+		snum = bucky.nextDouble();
+		System.out.println("Enter operation: ");
+		operation = bucky.nextLine();
+		switch(operation) {
+		case "x": 
+			answer = snum * fnum;
+			break;
+		case "/":
+			answer = snum / fnum;
+			break;
+		case "+":
+			answer = snum + fnum;
+			break;
+		case "-":
+			answer = snum - fnum;
+			break;
+		default:
+			answer = snum + fnum;
+		}
+		System.out.println(answer);
+		
+	}
+}
